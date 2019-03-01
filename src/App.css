@@ -35,6 +35,7 @@ body {
   background-image: url('../src/images/mainBG.png');
   background-size: cover;
   overflow: hidden;
+  background-repeat: no-repeat;
   /* color:green; */
 }
 :global(#kungfu) {
@@ -43,7 +44,25 @@ body {
   width: 100%;
   height: 100%;
   /* background-size: 100% 100%; */
-  border: 2px solid red;
+  /* border: 2px solid red; */
   z-index: 5;
   position: fixed;
+}
+
+#projectsTitle {
+  color: rgb(62, 223, 238);
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.nav-item {
+  font-size: 1.5em;
+}
+h3 {
+  color: rgb(148, 148, 148);
 }

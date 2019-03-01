@@ -5,7 +5,7 @@ export default class Banba extends Component {
   render() {
     return (
       <div id="kungfu">
-        <h1>B A N B A</h1>
+        <h1 id="projectsTitle">Projects</h1>
       </div>
     );
   }
