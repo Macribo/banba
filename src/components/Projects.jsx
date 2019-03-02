@@ -99,7 +99,7 @@ export default class Banba extends Component {
           <div className="row" id="projectRow">
             {/* cleite */}
             <Link
-              style={{ 'text-decoration': 'none' }}
+              style={{ textDecoration: 'none' }}
               className="L col-3  text-center projectBtnContainer"
               to="/Cleite"
               id="cleite"
@@ -114,7 +114,7 @@ export default class Banba extends Component {
 
             {/* fuburo */}
             <Link
-              style={{ 'text-decoration': 'none' }}
+              style={{ textDecoration: 'none' }}
               className="L col-3  text-center projectBtnContainer"
               to="/Fuburo"
               id="fuburo"
@@ -129,7 +129,7 @@ export default class Banba extends Component {
 
             {/*  */}
             <Link
-              style={{ 'text-decoration': 'none' }}
+              style={{ textDecoration: 'none' }}
               className="L col-3 text-center projectBtnContainer"
               to="/A"
               id="tbdA"
@@ -148,7 +148,7 @@ export default class Banba extends Component {
           <div className="row" id="projectRow">
             {/*  */}
             <Link
-              style={{ 'text-decoration': 'none' }}
+              style={{ textDecoration: 'none' }}
               className="L col-3 text-center projectBtnContainer"
               to="/B"
               id="tbdB"
@@ -178,7 +178,7 @@ export default class Banba extends Component {
             </Link>
             {/*  */}
             <Link
-              style={{ 'text-decoration': 'none' }}
+              style={{ textDecoration: 'none' }}
               className="L col-3  text-center projectBtnContainer"
               to="/D"
               id="tbdD"
@@ -197,7 +197,7 @@ export default class Banba extends Component {
           <div className="row" id="projectRow">
             {/* gallery */}
             <Link
-              style={{ 'text-decoration': 'none' }}
+              style={{ textDecoration: 'none' }}
               className="L col-3 text-center projectBtnContainer"
               to="/Gallery"
               id="gallery"
@@ -209,7 +209,7 @@ export default class Banba extends Component {
 
             {/*  likeUs*/}
             <Link
-              style={{ 'text-decoration': 'none' }}
+              style={{ textDecoration: 'none' }}
               className="L col-3  text-center projectBtnContainer"
               to="/Likeus"
               id="likeUs"
@@ -224,7 +224,7 @@ export default class Banba extends Component {
             </Link>
             {/*  */}
             <Link
-              style={{ 'text-decoration': 'none' }}
+              style={{ textDecoration: 'none' }}
               className="L col-3 text-center projectBtnContainer"
               to="E"
               id="tbdE"
