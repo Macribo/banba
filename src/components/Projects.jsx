@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css';
+import { Fade } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 import Preview from './Preview';
 
@@ -72,11 +74,14 @@ export default class Banba extends Component {
     console.log(this.state.projectDescription);
   };
 
+  handleOnMouseLeave = () => {
+    this.setState({ projectDescription: '' });
+  };
+
   state = { projectDescription: '' };
 
   descriptions = [
-    `"Ainm Cleite" means Nom-de-plume, in Irish. 
-  The Cleite project is about assistive software for Irish language learners.`,
+    `"Ainm Cleite" or "Nom-de-plume" is a collection of projects related to the development of assistive software for Irish language learners.`,
     `b`,
     `c`,
     `d`,
@@ -88,128 +93,152 @@ export default class Banba extends Component {
   ];
 
   render() {
-    // to be shown in preview
-
     return (
       <div id="kungfu">
-        <h1 id="projectsTitle">Projects</h1>
-
         <div className="projectMenu">
           <div className="row" id="projectRow">
             {/* cleite */}
-            <div
-              className="col-3  text-center projectBtnContainer"
+            <Link
+              style={{ 'text-decoration': 'none' }}
+              className="L col-3  text-center projectBtnContainer"
+              to="/Cleite"
               id="cleite"
               onMouseOver={this.handleOnMouseOver}
+              onMouseLeave={this.handleOnMouseLeave}
             >
               <i
                 className="fas fa-feather-alt fa-4x"
                 style={{ color: 'purple' }}
               />{' '}
-            </div>
+            </Link>
 
             {/* fuburo */}
-            <div
-              className="col-3  text-center projectBtnContainer"
+            <Link
+              style={{ 'text-decoration': 'none' }}
+              className="L col-3  text-center projectBtnContainer"
+              to="/Fuburo"
               id="fuburo"
               onMouseOver={this.handleOnMouseOver}
+              onMouseLeave={this.handleOnMouseLeave}
             >
               <i
                 className="fas fa-map-marker-alt fa-4x"
                 style={{ color: '#04E400' }}
               />{' '}
-            </div>
+            </Link>
 
             {/*  */}
-            <div
-              className="col-3 text-center projectBtnContainer"
+            <Link
+              style={{ 'text-decoration': 'none' }}
+              className="L col-3 text-center projectBtnContainer"
+              to="/A"
               id="tbdA"
               onMouseOver={this.handleOnMouseOver}
+              onMouseLeave={this.handleOnMouseLeave}
             >
               {' '}
               <i
                 className="fas fa-times fa-4x"
                 style={{ color: '#BE44EE' }}
               />{' '}
-            </div>
+            </Link>
           </div>
+          {/*close first row */}
 
           <div className="row" id="projectRow">
             {/*  */}
-            <div
-              className="col-3 text-center projectBtnContainer"
+            <Link
+              style={{ 'text-decoration': 'none' }}
+              className="L col-3 text-center projectBtnContainer"
+              to="/B"
               id="tbdB"
               onMouseOver={this.handleOnMouseOver}
+              onMouseLeave={this.handleOnMouseLeave}
             >
               {' '}
               <i
                 className="fas fa-times fa-4x"
                 style={{ color: '#BE44EE' }}
               />{' '}
-            </div>
+            </Link>
             {/*  */}
-            <div
-              className="col-3 text-center projectBtnContainer"
+
+            <Link
+              className="L col-3 text-center projectBtnContainer"
+              to="/C"
               id="tbdC"
               onMouseOver={this.handleOnMouseOver}
+              onMouseLeave={this.handleOnMouseLeave}
             >
               {' '}
               <i
                 className="fas fa-times fa-4x"
                 style={{ color: '#BE44EE' }}
               />{' '}
-            </div>
+            </Link>
             {/*  */}
-            <div
-              className="col-3  text-center projectBtnContainer"
+            <Link
+              style={{ 'text-decoration': 'none' }}
+              className="L col-3  text-center projectBtnContainer"
+              to="/D"
               id="tbdD"
               onMouseOver={this.handleOnMouseOver}
+              onMouseLeave={this.handleOnMouseLeave}
             >
               {' '}
               <i
                 className="fas fa-times fa-4x"
                 style={{ color: '#BE44EE' }}
               />{' '}
-            </div>
+            </Link>
           </div>
+          {/* ^end of second row */}
+
           <div className="row" id="projectRow">
             {/* gallery */}
-            <div
-              className="col-3 text-center projectBtnContainer"
+            <Link
+              style={{ 'text-decoration': 'none' }}
+              className="L col-3 text-center projectBtnContainer"
+              to="/Gallery"
               id="gallery"
               onMouseOver={this.handleOnMouseOver}
+              onMouseLeave={this.handleOnMouseLeave}
             >
               <i className="fas fa-palette fa-4x" style={{ color: 'brown' }} />{' '}
-            </div>
+            </Link>
 
             {/*  likeUs*/}
-
-            <div
-              className="col-3  text-center projectBtnContainer"
+            <Link
+              style={{ 'text-decoration': 'none' }}
+              className="L col-3  text-center projectBtnContainer"
+              to="/Likeus"
               id="likeUs"
               onMouseOver={this.handleOnMouseOver}
+              onMouseLeave={this.handleOnMouseLeave}
             >
               {' '}
               <i
                 className="fas fa-paw fa-4x"
                 style={{ color: 'rgba(245, 132, 226, 0.8)' }}
               />{' '}
-            </div>
+            </Link>
             {/*  */}
-            <div
-              className="col-3 text-center projectBtnContainer"
+            <Link
+              style={{ 'text-decoration': 'none' }}
+              className="L col-3 text-center projectBtnContainer"
+              to="E"
               id="tbdE"
               onMouseOver={this.handleOnMouseOver}
+              onMouseLeave={this.handleOnMouseLeave}
             >
               {' '}
               <i
                 className="fas fa-times fa-4x"
                 style={{ color: '#BE44EE' }}
               />{' '}
-            </div>
+            </Link>
           </div>
-        </div>
-
+        </div>{' '}
         <Preview projectDescription={this.state.projectDescription} />
       </div>
     );

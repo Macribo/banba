@@ -18,7 +18,19 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+.L {
+  border: 2px solid purple;
+  margin: 2px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  text-decoration: none;
+}
+.link {
+  text-decoration: none;
+}
 .App-link {
   color: #61dafb;
 }
@@ -99,7 +111,7 @@ h3 {
 }
 
 #preview {
-  border: 2px solid orange;
+  /* border: 2px solid orange; */
 
   margin: 5% 25% 0% 25%;
   width: 50%;
