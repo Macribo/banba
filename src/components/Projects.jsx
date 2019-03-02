@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css';
-import { Fade } from 'reactstrap';
 import { Link } from 'react-router-dom';
+import { findDOMNode } from 'react-dom';
+import $ from 'jquery';
 
 import Preview from './Preview';
 
@@ -78,11 +79,26 @@ export default class Banba extends Component {
     this.setState({ projectDescription: '' });
   };
 
+  handleClick = e => {
+    switch (e.target.id) {
+      case 'cleite':
+        window.location.replace('https://macribo.github.io/ainmCleite');
+
+        break;
+
+      case 'fuburo':
+        window.location.replace('https://fuburo.de');
+
+        break;
+      default:
+        break;
+    }
+  };
   state = { projectDescription: '' };
 
   descriptions = [
-    `"Ainm Cleite" or "Nom-de-plume" is a collection of projects related to the development of assistive software for Irish language learners.`,
-    `b`,
+    `"Banba" is a collection of projects related to the development of assistive software for Irish language learners. Prototype in jQuery, Bootstrap and Vanilla JS. `,
+    `"Fuburo.de" is a React/Redux web-app with a Mongo/Mongoose backend. It provides an online 'Fundbüro' complete with Google Maps API, User Login and Messaging service.`,
     `c`,
     `d`,
     `e`,
@@ -98,28 +114,30 @@ export default class Banba extends Component {
         <div className="projectMenu">
           <div className="row" id="projectRow">
             {/* cleite */}
-            <Link
-              style={{ 'text-decoration': 'none' }}
+            <div
+              style={{ textDecoration: 'none' }}
               className="L col-3  text-center projectBtnContainer"
-              to="/Cleite"
+              to="/E"
               id="cleite"
               onMouseOver={this.handleOnMouseOver}
               onMouseLeave={this.handleOnMouseLeave}
+              onClick={this.handleClick}
             >
               <i
                 className="fas fa-feather-alt fa-4x"
                 style={{ color: 'purple' }}
               />{' '}
-            </Link>
+            </div>
 
             {/* fuburo */}
             <Link
-              style={{ 'text-decoration': 'none' }}
+              style={{ textDecoration: 'none' }}
               className="L col-3  text-center projectBtnContainer"
               to="/Fuburo"
               id="fuburo"
               onMouseOver={this.handleOnMouseOver}
               onMouseLeave={this.handleOnMouseLeave}
+              onClick={this.handleClick}
             >
               <i
                 className="fas fa-map-marker-alt fa-4x"
@@ -129,7 +147,7 @@ export default class Banba extends Component {
 
             {/*  */}
             <Link
-              style={{ 'text-decoration': 'none' }}
+              style={{ textDecoration: 'none' }}
               className="L col-3 text-center projectBtnContainer"
               to="/A"
               id="tbdA"
@@ -148,7 +166,7 @@ export default class Banba extends Component {
           <div className="row" id="projectRow">
             {/*  */}
             <Link
-              style={{ 'text-decoration': 'none' }}
+              style={{ textDecoration: 'none' }}
               className="L col-3 text-center projectBtnContainer"
               to="/B"
               id="tbdB"
@@ -164,6 +182,7 @@ export default class Banba extends Component {
             {/*  */}
 
             <Link
+              style={{ textDecoration: 'none' }}
               className="L col-3 text-center projectBtnContainer"
               to="/C"
               id="tbdC"
@@ -178,7 +197,7 @@ export default class Banba extends Component {
             </Link>
             {/*  */}
             <Link
-              style={{ 'text-decoration': 'none' }}
+              style={{ textDecoration: 'none' }}
               className="L col-3  text-center projectBtnContainer"
               to="/D"
               id="tbdD"
@@ -197,7 +216,7 @@ export default class Banba extends Component {
           <div className="row" id="projectRow">
             {/* gallery */}
             <Link
-              style={{ 'text-decoration': 'none' }}
+              style={{ textDecoration: 'none' }}
               className="L col-3 text-center projectBtnContainer"
               to="/Gallery"
               id="gallery"
@@ -209,7 +228,7 @@ export default class Banba extends Component {
 
             {/*  likeUs*/}
             <Link
-              style={{ 'text-decoration': 'none' }}
+              style={{ textDecoration: 'none' }}
               className="L col-3  text-center projectBtnContainer"
               to="/Likeus"
               id="likeUs"
@@ -224,9 +243,9 @@ export default class Banba extends Component {
             </Link>
             {/*  */}
             <Link
-              style={{ 'text-decoration': 'none' }}
+              style={{ textDecoration: 'none' }}
               className="L col-3 text-center projectBtnContainer"
-              to="E"
+              to="/E"
               id="tbdE"
               onMouseOver={this.handleOnMouseOver}
               onMouseLeave={this.handleOnMouseLeave}

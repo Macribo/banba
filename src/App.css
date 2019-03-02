@@ -50,7 +50,7 @@ body {
   background-repeat: no-repeat;
   /* color:green; */
 }
-:global(#kungfu) {
+:global(#kungfu, #shaolin) {
   top: 0;
   left: 0%;
   width: 100%;
