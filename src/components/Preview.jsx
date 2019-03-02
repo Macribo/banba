@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export default class Preview extends React.Component {
+export default class Preview extends Component {
   render() {
     console.log(this.props);
     return (

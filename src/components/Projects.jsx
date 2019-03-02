@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
-import { Container, Row, Col } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css';
 import { Link } from 'react-router-dom';
-import { findDOMNode } from 'react-dom';
-import $ from 'jquery';
 
 import Preview from './Preview';
 
