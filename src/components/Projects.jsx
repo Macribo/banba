@@ -10,7 +10,7 @@ import Preview from './Preview';
 export default class Banba extends Component {
   handleOnMouseOver = e => {
     switch (e.target.id) {
-      case 'cleite':
+      case 'ainmCleite':
         this.setState({
           projectDescription: this.descriptions[0]
         });
@@ -78,10 +78,20 @@ export default class Banba extends Component {
     this.setState({ projectDescription: '' });
   };
 
+  handleMouseClick = e => {
+    switch (e.target.id) {
+      case 'ainmCleite':
+        window.open('https://macribo.github.io/ainmCleite/');
+        break;
+      default:
+        break;
+    }
+  };
+
   state = { projectDescription: '' };
 
   descriptions = [
-    `"Ainm Cleite" or "Nom-de-plume" is a collection of projects related to the development of assistive software for Irish language learners.`,
+    `"Ainm Cleite" is a collection of projects related to the development of assistive software for Irish language learners.`,
     `b`,
     `c`,
     `d`,
@@ -98,19 +108,19 @@ export default class Banba extends Component {
         <div className="projectMenu">
           <div className="row" id="projectRow">
             {/* cleite */}
-            <Link
+            <div
               style={{ textDecoration: 'none' }}
               className="L col-3  text-center projectBtnContainer"
-              to="/Cleite"
-              id="cleite"
+              id="ainmCleite"
               onMouseOver={this.handleOnMouseOver}
               onMouseLeave={this.handleOnMouseLeave}
+              onClick={this.handleMouseClick}
             >
               <i
                 className="fas fa-feather-alt fa-4x"
                 style={{ color: 'purple' }}
               />{' '}
-            </Link>
+            </div>
 
             {/* fuburo */}
             <Link
@@ -120,7 +130,9 @@ export default class Banba extends Component {
               id="fuburo"
               onMouseOver={this.handleOnMouseOver}
               onMouseLeave={this.handleOnMouseLeave}
+              onClick={this.handleMouseClick}
             >
+              >
               <i
                 className="fas fa-map-marker-alt fa-4x"
                 style={{ color: '#04E400' }}

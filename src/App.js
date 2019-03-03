@@ -4,7 +4,6 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Projects from './components/Projects';
-import Cleite from './components/Cleite';
 import Likeus from './components/Likeus';
 import Fuburo from './components/Fuburo';
 import Gallery from './components/Gallery';
@@ -24,7 +23,6 @@ class App extends Component {
           <Sitenav />
           <Switch>
             <Route exact path="/" component={Projects} />
-            <Route exact path="/cleite" component={Cleite} />
             <Route exact path="/likeus" component={Likeus} />
             <Route exact path="/fuburo" component={Fuburo} />
             <Route exact path="/gallery" component={Gallery} />
