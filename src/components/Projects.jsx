@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css';
-import { Fade } from 'reactstrap';
+import ProjectTitle from './ProjectTitle';
+// import { Fade } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
 import Preview from './Preview';
@@ -88,10 +89,10 @@ export default class Banba extends Component {
     }
   };
 
-  state = { projectDescription: '' };
+  state = { projectDescription: '', projectTitle: 'Title Goes Here' };
 
   descriptions = [
-    `"Ainm Cleite" is a collection of projects related to the development of assistive software for Irish language learners.`,
+    `"Banba" is a collection of projects related to the development of assistive software for Irish language learners.`,
     `b`,
     `c`,
     `d`,
@@ -105,7 +106,8 @@ export default class Banba extends Component {
   render() {
     return (
       <div id="kungfu">
-        <div className="projectMenu">
+        <ProjectTitle title={this.state.ProjectTitle} />
+        <div className="projectMenu" style={{ marginTop: '0' }}>
           <div className="row" id="projectRow">
             {/* cleite */}
             <div
@@ -132,7 +134,6 @@ export default class Banba extends Component {
               onMouseLeave={this.handleOnMouseLeave}
               onClick={this.handleMouseClick}
             >
-              >
               <i
                 className="fas fa-map-marker-alt fa-4x"
                 style={{ color: '#04E400' }}
@@ -150,8 +151,8 @@ export default class Banba extends Component {
             >
               {' '}
               <i
-                className="fas fa-times fa-4x"
-                style={{ color: '#BE44EE' }}
+                className="fas fa-keyboard fa-4x"
+                style={{ color: '#34495E' }}
               />{' '}
             </Link>
           </div>
