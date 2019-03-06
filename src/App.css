@@ -60,6 +60,10 @@ body {
   position: fixed;
 } */
 
+#contact:hover {
+  cursor: pointer;
+}
+
 #projectsTitle {
   color: rgb(138, 138, 138);
   font-family: 'Helvetica', cursive;
@@ -77,7 +81,11 @@ body {
 h3 {
   color: rgb(148, 148, 148);
 }
-
+#modbod {
+  margin: 10%;
+  color: rgb(85, 91, 141);
+  text-align: center;
+}
 #on-top {
   opacity: 0;
   background-color: white;
