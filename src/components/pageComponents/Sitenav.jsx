@@ -36,7 +36,10 @@ export default class Sitenav extends React.Component {
                 <NavLink href="/components/">Contact</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/components/">CV</NavLink>
+                {/* <a href="examplefile.pdf" download>Link text</a> */}
+                <NavLink href="./RMU_CV.pdf" download>
+                  CV
+                </NavLink>
               </NavItem>
             </Nav>
           </Collapse>

@@ -94,6 +94,9 @@ export default class Banba extends Component {
       case 'banba':
         window.open('https://macribo.github.io/ainmCleite/');
         break;
+      case 'fuburo':
+        window.open('https://fuburo.de');
+        break;
       default:
         break;
     }

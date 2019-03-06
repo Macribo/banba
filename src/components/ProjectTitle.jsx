@@ -7,7 +7,7 @@ export default class ProjectTitle extends Component {
         className="row"
         id="preview"
         style={{
-          border: '2px solid blue',
+          //   border: '2px solid blue',
           minHeight: '50px',
           marginTop: '5%',
           marginBottom: '0',
