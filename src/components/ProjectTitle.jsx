@@ -7,12 +7,17 @@ export default class ProjectTitle extends Component {
         className="row"
         id="preview"
         style={{
+          border: '2px solid blue',
+          minHeight: '50px',
           marginTop: '5%',
           marginBottom: '0',
-          paddingLeft: '120px'
+          paddingLeft: '120px',
+          textAlign: 'center'
         }}
       >
-        <h3>{this.props.title}Title</h3>
+        <h3 style={{ zIndex: '5', position: 'absolute' }}>
+          {this.props.projectTitle}
+        </h3>
       </div>
     );
   }

@@ -11,63 +11,73 @@ import Preview from './Preview';
 export default class Banba extends Component {
   handleOnMouseOver = e => {
     switch (e.target.id) {
-      case 'ainmCleite':
+      case 'banba':
         this.setState({
-          projectDescription: this.descriptions[0]
+          projectDescription: this.descriptions[0],
+          projectTitle: this.titles[0]
         });
         break;
 
       case 'fuburo':
         this.setState({
-          projectDescription: this.descriptions[1]
+          projectDescription: this.descriptions[1],
+          projectTitle: this.titles[1]
         });
         break;
 
       case 'tbdA':
         this.setState({
-          projectDescription: this.descriptions[2]
+          projectDescription: this.descriptions[2],
+          projectTitle: this.titles[2]
         });
         break;
 
       case 'tbdB':
         this.setState({
-          projectDescription: this.descriptions[3]
+          projectDescription: this.descriptions[3],
+          projectTitle: this.titles[3]
         });
         break;
 
       case 'tbdC':
         this.setState({
-          projectDescription: this.descriptions[4]
+          projectDescription: this.descriptions[4],
+          projectTitle: this.titles[4]
         });
         break;
 
       case 'tbdD':
         this.setState({
-          projectDescription: this.descriptions[5]
+          projectDescription: this.descriptions[5],
+          projectTitle: this.titles[5]
         });
         break;
 
       case 'gallery':
         this.setState({
-          projectDescription: this.descriptions[6]
+          projectDescription: this.descriptions[6],
+          projectTitle: this.titles[6]
         });
         break;
 
       case 'likeUs':
         this.setState({
-          projectDescription: this.descriptions[7]
+          projectDescription: this.descriptions[7],
+          projectTitle: this.titles[7]
         });
         break;
 
       case 'tbdE':
         this.setState({
-          projectDescription: this.descriptions[8]
+          projectDescription: this.descriptions[8],
+          projectTitle: this.titles[8]
         });
         break;
 
       default:
         this.setState({
-          projectDescription: ''
+          projectDescription: '',
+          projectTitles: ''
         });
         break;
     }
@@ -76,12 +86,12 @@ export default class Banba extends Component {
   };
 
   handleOnMouseLeave = () => {
-    this.setState({ projectDescription: '' });
+    this.setState({ projectDescription: '', projectTitle: '' });
   };
 
   handleMouseClick = e => {
     switch (e.target.id) {
-      case 'ainmCleite':
+      case 'banba':
         window.open('https://macribo.github.io/ainmCleite/');
         break;
       default:
@@ -89,8 +99,8 @@ export default class Banba extends Component {
     }
   };
 
-  state = { projectDescription: '', projectTitle: 'Title Goes Here' };
-
+  state = { projectDescription: '', projectTitle: '' };
+  titles = ['Banba', 'Fuburo', 'ABC', '', '', '', 'Gallery', 'likeUs', ''];
   descriptions = [
     `"Banba" is a collection of projects related to the development of assistive software for Irish language learners.`,
     `b`,
@@ -106,14 +116,14 @@ export default class Banba extends Component {
   render() {
     return (
       <div id="kungfu">
-        <ProjectTitle title={this.state.ProjectTitle} />
+        <ProjectTitle projectTitle={this.state.projectTitle} />
         <div className="projectMenu" style={{ marginTop: '0' }}>
           <div className="row" id="projectRow">
             {/* cleite */}
             <div
               style={{ textDecoration: 'none' }}
               className="L col-3  text-center projectBtnContainer"
-              id="ainmCleite"
+              id="banba"
               onMouseOver={this.handleOnMouseOver}
               onMouseLeave={this.handleOnMouseLeave}
               onClick={this.handleMouseClick}
