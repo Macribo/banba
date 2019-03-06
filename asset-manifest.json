@@ -1,17 +1,17 @@
 {
-  "main.css": "/banba/static/css/main.82e208c0.chunk.css",
-  "main.js": "/banba/static/js/main.d5145036.chunk.js",
-  "main.js.map": "/banba/static/js/main.d5145036.chunk.js.map",
+  "main.css": "/banba/static/css/main.384b9c6a.chunk.css",
+  "main.js": "/banba/static/js/main.e446f3e3.chunk.js",
+  "main.js.map": "/banba/static/js/main.e446f3e3.chunk.js.map",
   "runtime~main.js": "/banba/static/js/runtime~main.8e50482f.js",
   "runtime~main.js.map": "/banba/static/js/runtime~main.8e50482f.js.map",
   "static/css/2.6b1ddee5.chunk.css": "/banba/static/css/2.6b1ddee5.chunk.css",
-  "static/js/2.d001a4f4.chunk.js": "/banba/static/js/2.d001a4f4.chunk.js",
-  "static/js/2.d001a4f4.chunk.js.map": "/banba/static/js/2.d001a4f4.chunk.js.map",
+  "static/js/2.7cea36fe.chunk.js": "/banba/static/js/2.7cea36fe.chunk.js",
+  "static/js/2.7cea36fe.chunk.js.map": "/banba/static/js/2.7cea36fe.chunk.js.map",
   "index.html": "/banba/index.html",
-  "precache-manifest.0588fe783e3ea349de37287527272c52.js": "/banba/precache-manifest.0588fe783e3ea349de37287527272c52.js",
+  "precache-manifest.fec78c2f2495d32686a13682b6b20e99.js": "/banba/precache-manifest.fec78c2f2495d32686a13682b6b20e99.js",
   "service-worker.js": "/banba/service-worker.js",
   "static/css/2.6b1ddee5.chunk.css.map": "/banba/static/css/2.6b1ddee5.chunk.css.map",
-  "static/css/main.82e208c0.chunk.css.map": "/banba/static/css/main.82e208c0.chunk.css.map",
+  "static/css/main.384b9c6a.chunk.css.map": "/banba/static/css/main.384b9c6a.chunk.css.map",
   "static/media/logo.svg": "/banba/static/media/logo.5d5d9eef.svg",
-  "static/media/App.css": "/banba/static/media/mainBG.ac04d4d4.png"
+  "static/media/App.css": "/banba/static/media/mainBG.0d7bc4d7.png"
 }
