@@ -86,7 +86,12 @@ export default class Banba extends Component {
   };
 
   handleOnMouseLeave = () => {
-    this.setState({ projectDescription: '', projectTitle: '' });
+    this.setState({
+      projectDescription:
+        'Mouseover a project for details. Click a project to view source or demo',
+
+      projectTitle: 'Welcome'
+    });
   };
 
   handleMouseClick = e => {
@@ -102,13 +107,27 @@ export default class Banba extends Component {
     }
   };
 
-  state = { projectDescription: '', projectTitle: '' };
-  titles = ['Banba', 'Fuburo', 'ABC', '', '', '', 'Gallery', 'likeUs', ''];
+  state = {
+    projectDescription:
+      'Mouseover a project to see details. Click to view demo/source',
+    projectTitle: 'Welcome!'
+  };
+  titles = [
+    'Banba',
+    'Fuburo',
+    'ABC',
+    'Web Development',
+    '',
+    '',
+    'Gallery',
+    'likeUs',
+    ''
+  ];
   descriptions = [
     `"Banba" is a collection of projects related to the development of assistive software for Irish language learners.`,
     `b`,
-    `A tiny game for tiny people`,
-    `d`,
+    `A tiny game for tiny people who would like to practice the Alphabet`,
+    `How shall we develop the web?`,
     `e`,
     `f`,
     `g`,
@@ -124,164 +143,165 @@ export default class Banba extends Component {
             {<ProjectTitle projectTitle={this.state.projectTitle} />}
           </h1>
           <p className="lead">
-            This is a simple hero unit, a simple Jumbotron-style component for
-            calling extra attention to featured content or information.
+            <Preview projectDescription={this.state.projectDescription} />
           </p>
           <hr className="my-2" />
           <p>
-            It uses utility classes for typography and spacing to space content
-            out within the larger container.
+            {/* It uses utility classes for typography and spacing to space content
+            out within the larger container. */}
           </p>
+          <div className="projectMenu" style={{ marginTop: '0' }}>
+            <div className="row" id="projectRow">
+              {/* cleite */}
+              <div
+                style={{ textDecoration: 'none' }}
+                className="L col-3  text-center projectBtnContainer"
+                id="banba"
+                onMouseOver={this.handleOnMouseOver}
+                onMouseLeave={this.handleOnMouseLeave}
+                onClick={this.handleMouseClick}
+              >
+                <i
+                  className="fas fa-feather-alt fa-4x"
+                  style={{ color: 'purple' }}
+                />{' '}
+              </div>
+
+              {/* fuburo */}
+              <Link
+                style={{ textDecoration: 'none' }}
+                className="L col-3  text-center projectBtnContainer"
+                to="/Fuburo"
+                id="fuburo"
+                onMouseOver={this.handleOnMouseOver}
+                onMouseLeave={this.handleOnMouseLeave}
+                onClick={this.handleMouseClick}
+              >
+                <i
+                  className="fas fa-map-marker-alt fa-4x"
+                  style={{ color: '#04E400' }}
+                />{' '}
+              </Link>
+
+              {/*  */}
+              <Link
+                style={{ textDecoration: 'none' }}
+                className="L col-3 text-center projectBtnContainer"
+                to="/A"
+                id="tbdA"
+                onMouseOver={this.handleOnMouseOver}
+                onMouseLeave={this.handleOnMouseLeave}
+              >
+                {' '}
+                <i
+                  className="fas fa-keyboard fa-4x"
+                  style={{ color: '#34495E' }}
+                />{' '}
+              </Link>
+            </div>
+            {/*close first row */}
+
+            <div className="row" id="projectRow">
+              {/*  */}
+              <Link
+                style={{ textDecoration: 'none' }}
+                className="L col-3 text-center projectBtnContainer"
+                to="/B"
+                id="tbdB"
+                onMouseOver={this.handleOnMouseOver}
+                onMouseLeave={this.handleOnMouseLeave}
+              >
+                {' '}
+                <i
+                  class="fas fa-journal-whills fa-4x
+                "
+                />{' '}
+              </Link>
+              {/*  */}
+
+              <Link
+                className="L col-3 text-center projectBtnContainer"
+                to="/C"
+                id="tbdC"
+                onMouseOver={this.handleOnMouseOver}
+                onMouseLeave={this.handleOnMouseLeave}
+              >
+                {' '}
+                <i
+                  className="fas fa-times fa-4x"
+                  style={{ color: '#BE44EE' }}
+                />{' '}
+              </Link>
+              {/*  */}
+              <Link
+                style={{ textDecoration: 'none' }}
+                className="L col-3  text-center projectBtnContainer"
+                to="/D"
+                id="tbdD"
+                onMouseOver={this.handleOnMouseOver}
+                onMouseLeave={this.handleOnMouseLeave}
+              >
+                {' '}
+                <i
+                  className="fas fa-times fa-4x"
+                  style={{ color: '#BE44EE' }}
+                />{' '}
+              </Link>
+            </div>
+            {/* ^end of second row */}
+
+            <div className="row" id="projectRow">
+              {/* gallery */}
+              <Link
+                style={{ textDecoration: 'none' }}
+                className="L col-3 text-center projectBtnContainer"
+                to="/Gallery"
+                id="gallery"
+                onMouseOver={this.handleOnMouseOver}
+                onMouseLeave={this.handleOnMouseLeave}
+              >
+                <i
+                  className="fas fa-palette fa-4x"
+                  style={{ color: 'brown' }}
+                />{' '}
+              </Link>
+
+              {/*  likeUs*/}
+              <Link
+                style={{ textDecoration: 'none' }}
+                className="L col-3  text-center projectBtnContainer"
+                to="/Likeus"
+                id="likeUs"
+                onMouseOver={this.handleOnMouseOver}
+                onMouseLeave={this.handleOnMouseLeave}
+              >
+                {' '}
+                <i
+                  className="fas fa-paw fa-4x"
+                  style={{ color: 'rgba(245, 132, 226, 0.8)' }}
+                />{' '}
+              </Link>
+              {/*  */}
+              <Link
+                style={{ textDecoration: 'none' }}
+                className="L col-3 text-center projectBtnContainer"
+                to="E"
+                id="tbdE"
+                onMouseOver={this.handleOnMouseOver}
+                onMouseLeave={this.handleOnMouseLeave}
+              >
+                {' '}
+                <i
+                  className="fas fa-times fa-4x"
+                  style={{ color: '#BE44EE' }}
+                />{' '}
+              </Link>
+            </div>
+          </div>{' '}
           <p className="lead">
-            <Button color="primary">Learn More</Button>
+            {/* <Button color="primary">Learn More</Button> */}
           </p>
         </Jumbotron>
-        <div className="projectMenu" style={{ marginTop: '0' }}>
-          <div className="row" id="projectRow">
-            {/* cleite */}
-            <div
-              style={{ textDecoration: 'none' }}
-              className="L col-3  text-center projectBtnContainer"
-              id="banba"
-              onMouseOver={this.handleOnMouseOver}
-              onMouseLeave={this.handleOnMouseLeave}
-              onClick={this.handleMouseClick}
-            >
-              <i
-                className="fas fa-feather-alt fa-4x"
-                style={{ color: 'purple' }}
-              />{' '}
-            </div>
-
-            {/* fuburo */}
-            <Link
-              style={{ textDecoration: 'none' }}
-              className="L col-3  text-center projectBtnContainer"
-              to="/Fuburo"
-              id="fuburo"
-              onMouseOver={this.handleOnMouseOver}
-              onMouseLeave={this.handleOnMouseLeave}
-              onClick={this.handleMouseClick}
-            >
-              <i
-                className="fas fa-map-marker-alt fa-4x"
-                style={{ color: '#04E400' }}
-              />{' '}
-            </Link>
-
-            {/*  */}
-            <Link
-              style={{ textDecoration: 'none' }}
-              className="L col-3 text-center projectBtnContainer"
-              to="/A"
-              id="tbdA"
-              onMouseOver={this.handleOnMouseOver}
-              onMouseLeave={this.handleOnMouseLeave}
-            >
-              {' '}
-              <i
-                className="fas fa-keyboard fa-4x"
-                style={{ color: '#34495E' }}
-              />{' '}
-            </Link>
-          </div>
-          {/*close first row */}
-
-          <div className="row" id="projectRow">
-            {/*  */}
-            <Link
-              style={{ textDecoration: 'none' }}
-              className="L col-3 text-center projectBtnContainer"
-              to="/B"
-              id="tbdB"
-              onMouseOver={this.handleOnMouseOver}
-              onMouseLeave={this.handleOnMouseLeave}
-            >
-              {' '}
-              <i
-                className="fas fa-times fa-4x"
-                style={{ color: '#BE44EE' }}
-              />{' '}
-            </Link>
-            {/*  */}
-
-            <Link
-              className="L col-3 text-center projectBtnContainer"
-              to="/C"
-              id="tbdC"
-              onMouseOver={this.handleOnMouseOver}
-              onMouseLeave={this.handleOnMouseLeave}
-            >
-              {' '}
-              <i
-                className="fas fa-times fa-4x"
-                style={{ color: '#BE44EE' }}
-              />{' '}
-            </Link>
-            {/*  */}
-            <Link
-              style={{ textDecoration: 'none' }}
-              className="L col-3  text-center projectBtnContainer"
-              to="/D"
-              id="tbdD"
-              onMouseOver={this.handleOnMouseOver}
-              onMouseLeave={this.handleOnMouseLeave}
-            >
-              {' '}
-              <i
-                className="fas fa-times fa-4x"
-                style={{ color: '#BE44EE' }}
-              />{' '}
-            </Link>
-          </div>
-          {/* ^end of second row */}
-
-          <div className="row" id="projectRow">
-            {/* gallery */}
-            <Link
-              style={{ textDecoration: 'none' }}
-              className="L col-3 text-center projectBtnContainer"
-              to="/Gallery"
-              id="gallery"
-              onMouseOver={this.handleOnMouseOver}
-              onMouseLeave={this.handleOnMouseLeave}
-            >
-              <i className="fas fa-palette fa-4x" style={{ color: 'brown' }} />{' '}
-            </Link>
-
-            {/*  likeUs*/}
-            <Link
-              style={{ textDecoration: 'none' }}
-              className="L col-3  text-center projectBtnContainer"
-              to="/Likeus"
-              id="likeUs"
-              onMouseOver={this.handleOnMouseOver}
-              onMouseLeave={this.handleOnMouseLeave}
-            >
-              {' '}
-              <i
-                className="fas fa-paw fa-4x"
-                style={{ color: 'rgba(245, 132, 226, 0.8)' }}
-              />{' '}
-            </Link>
-            {/*  */}
-            <Link
-              style={{ textDecoration: 'none' }}
-              className="L col-3 text-center projectBtnContainer"
-              to="E"
-              id="tbdE"
-              onMouseOver={this.handleOnMouseOver}
-              onMouseLeave={this.handleOnMouseLeave}
-            >
-              {' '}
-              <i
-                className="fas fa-times fa-4x"
-                style={{ color: '#BE44EE' }}
-              />{' '}
-            </Link>
-          </div>
-        </div>{' '}
-        <Preview projectDescription={this.state.projectDescription} />
       </div>
     );
   }
