@@ -5,8 +5,8 @@ export default class Preview extends React.Component {
     console.log(this.props);
     return (
       <div>
-        <div className="row" id="preview">
-          {this.props.projectDescription}
+        <div className="row" id="preview" style={{ border: '2px solid green' }}>
+          <h3> {this.props.projectDescription}</h3>
         </div>
       </div>
     );
