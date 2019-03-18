@@ -5,6 +5,11 @@ export default class ProjectTitle extends Component {
     return (
       <div
         className="row"
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignContent: 'center'
+        }}
         id="preview"
         // style={{
         //   //   border: '2px solid blue',

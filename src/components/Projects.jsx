@@ -76,8 +76,8 @@ export default class Banba extends Component {
 
       default:
         this.setState({
-          projectDescription: '',
-          projectTitles: ''
+          projectDescription: 'Fallow Fields',
+          projectTitles: 'Placeholder'
         });
         break;
     }
@@ -117,28 +117,38 @@ export default class Banba extends Component {
     'Fuburo',
     'ABC',
     'Web Development',
-    '',
-    '',
+    'placeholder',
+    'placeholder',
     'Gallery',
     'likeUs',
-    ''
+    'placeholder'
   ];
   descriptions = [
     `"Banba" is a collection of projects related to the development of assistive software for Irish language learners.`,
-    `b`,
+    `Fuburo: The online lost and fouund office. www.fuburo.de`,
     `A tiny game for tiny people who would like to practice the Alphabet`,
-    `How shall we develop the web?`,
-    `e`,
-    `f`,
-    `g`,
-    `h`,
-    `i`
+    `My developer blog asks: How shall we develop the web?`,
+    `Fallow field`,
+    `Fallow field`,
+    `Fallow field`,
+    `likeUs; the breakfast App`,
+    `Fallow field`
   ];
 
   render() {
     return (
-      <div id="kungfu">
-        <Jumbotron align="center">
+      <div
+        id="kungfu"
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignContent: 'center'
+        }}
+      >
+        <Jumbotron
+          align="center"
+          style={{ width: '80%', opacity: '0.8', borderRadius: '10px' }}
+        >
           <h1 className="display-3">
             {<ProjectTitle projectTitle={this.state.projectTitle} />}
           </h1>
