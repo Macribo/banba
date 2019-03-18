@@ -12,23 +12,23 @@ self.__precacheManifest = [
     "url": "/banba/static/js/runtime~main.8e50482f.js"
   },
   {
-    "revision": "ff6ea0830fe01ec9de6f",
-    "url": "/banba/static/js/main.ff6ea083.chunk.js"
+    "revision": "c3bc770662696bffb2a8",
+    "url": "/banba/static/js/main.c3bc7706.chunk.js"
   },
   {
-    "revision": "1e68c62b79960d0f843f",
-    "url": "/banba/static/js/2.1e68c62b.chunk.js"
+    "revision": "765fa6302d9848020e8e",
+    "url": "/banba/static/js/2.765fa630.chunk.js"
   },
   {
-    "revision": "ff6ea0830fe01ec9de6f",
-    "url": "/banba/static/css/main.91b195b1.chunk.css"
+    "revision": "c3bc770662696bffb2a8",
+    "url": "/banba/static/css/main.94a052cc.chunk.css"
   },
   {
-    "revision": "1e68c62b79960d0f843f",
+    "revision": "765fa6302d9848020e8e",
     "url": "/banba/static/css/2.6b1ddee5.chunk.css"
   },
   {
-    "revision": "d872edce875804ff6dd64f1ee043c195",
+    "revision": "8a24952bf5ef8bd7f7e5232a4c7af3ec",
     "url": "/banba/index.html"
   }
 ];
