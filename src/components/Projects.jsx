@@ -116,7 +116,7 @@ export default class Banba extends Component {
   titles = [
     'Banba',
     'Fuburo',
-    'ABC',
+    'Tiny Hans',
     'Web Development',
     'placeholder',
     'placeholder',
@@ -126,9 +126,9 @@ export default class Banba extends Component {
   ];
   descriptions = [
     `"Banba" is a collection of projects related to the development of assistive software for Irish language learners.`,
-    `Fuburo: The online lost and fouund office. www.fuburo.de`,
-    `A tiny game for tiny people who would like to practice the Alphabet`,
-    `My developer blog asks: How shall we develop the web?`,
+    `Fuburo: The online lost and found office. www.fuburo.de`,
+    `Learn To Type with Tiny Hans: A Tiny People Typing Tutor`,
+    `Line of the day: Because busy people blog.`,
     `Fallow field`,
     `Fallow field`,
     `Fallow field`,
@@ -148,13 +148,16 @@ export default class Banba extends Component {
       >
         <Jumbotron
           align="center"
-          style={{ width: '80%', opacity: '0.8', borderRadius: '10px' }}
+          style={{
+            width: '80%',
+            opacity: '0.8',
+            borderRadius: '10px'
+          }}
         >
           <h1 className="display-3">
             {<ProjectTitle projectTitle={this.state.projectTitle} />}
           </h1>
           <Preview projectDescription={this.state.projectDescription} />
-          <hr className="my-2" />
           <div
             className="projectMenu"
             align="center"
@@ -238,8 +241,8 @@ export default class Banba extends Component {
               >
                 {' '}
                 <i
-                  className="fas fa-times fa-4x"
-                  style={{ color: '#BE44EE' }}
+                  className="fas fa-crow fa-4x"
+                  style={{ color: 'rgb(78, 73, 83)' }}
                 />{' '}
               </Link>
               {/*  */}
@@ -253,8 +256,8 @@ export default class Banba extends Component {
               >
                 {' '}
                 <i
-                  className="fas fa-times fa-4x"
-                  style={{ color: '#BE44EE' }}
+                  className="fas fa-crow fa-4x"
+                  style={{ color: 'rgb(78, 73, 83)' }}
                 />{' '}
               </Link>
             </div>
@@ -302,8 +305,8 @@ export default class Banba extends Component {
               >
                 {' '}
                 <i
-                  className="fas fa-times fa-4x"
-                  style={{ color: '#BE44EE' }}
+                  className="fas fa-crow fa-4x"
+                  style={{ color: 'rgb(78, 73, 83)' }}
                 />{' '}
               </Link>
             </div>
