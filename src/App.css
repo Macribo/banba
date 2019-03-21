@@ -357,3 +357,29 @@ h3 {
   background-image: url('../src/images/fallow4.png');
   background-size: contain;
 } */
+
+/*position relative as a base for non-static elements*/
+#outerDiv {
+  position: relative;
+}
+
+/*every direct child positioned absolute*/
+#outerDiv > div {
+  position: absolute;
+}
+.poster-to-show {
+  background-image: url('../src/images/tinyHans.png');
+  /* 
+  height: 100%;
+  width: 100%;
+  background-size: cover; */
+  border: 3px solid green;
+  background-repeat: no-repeat;
+  /* justify-content: space-around */
+}
+
+#stack-row-elements {
+  /* border: 3px solid green; */
+  display: flex;
+  justify-content: center;
+}
