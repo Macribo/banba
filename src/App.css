@@ -117,11 +117,13 @@ h3 {
   justify-content: center;
 }
 #projectRow {
-  margin: 0% 25% 0% 25%;
-  width: 50%;
+  /* margin: 0% 25% 0% 25%; */
+  /* width: 80%; */
   /* padding: 5%; */
-  align-items: center;
+  display: flex;
   justify-content: center;
+  align-items: center;
+  /* justify-content: center; */
   /* background: rgb(248, 243, 253); */
 }
 
@@ -135,8 +137,10 @@ h3 {
 .projectBtnContainer {
   border-radius: 25px;
   border: 4px solid rgb(248, 243, 253);
-  /* align-items: center;
+  height: 100px;
   justify-content: center;
+  width: 600px !important;
+  /* align-items: center;
   vertical-align: middle;
   text-align: center;
   display: inline-block;*/

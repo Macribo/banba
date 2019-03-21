@@ -155,13 +155,14 @@ export default class Banba extends Component {
           </h1>
           <Preview projectDescription={this.state.projectDescription} />
           <hr className="my-2" />
-          <p>
-            {/* It uses utility classes for typography and spacing to space content
-            out within the larger container. */}
-          </p>
-          <div className="projectMenu" style={{ marginTop: '0' }}>
-            <div className="row" id="projectRow">
+          <div
+            className="projectMenu"
+            align="center"
+            style={{ marginTop: '0' }}
+          >
+            <div className="row" id="projectRow" align="center">
               {/* cleite */}
+
               <div
                 style={{ textDecoration: 'none' }}
                 className="L col-3  text-center projectBtnContainer"
