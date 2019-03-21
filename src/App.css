@@ -99,14 +99,22 @@ h3 {
 }
 
 .projectMenu {
-  margin-top: 5%;
+  /* margin-top: 5%; */
+  /* background-size: 100% 100%; */
+
+  /* background-image: url('../src/images/bg2.png'); */
+  background-size: contain;
+  overflow: hidden;
+  background-repeat: horozontal;
+  width: 100%;
+  height: 100%;
   /* border: 2px solid green; */
   /* padding: 5%; */
 
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* align-items: center;
-  justify-content: center; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 #projectRow {
   margin: 0% 25% 0% 25%;
@@ -295,3 +303,53 @@ h3 {
 .fas {
   pointer-events: none;
 }
+/* 
+#banba {
+  height: 100px;
+  background-image: url('../src/images/fallow0.png');
+  background-size: contain;
+}
+
+#fuburo {
+  height: 100px;
+  background-image: url('../src/images/fallow1.png');
+  background-size: contain;
+}
+#likeUs {
+  height: 100px;
+  background-image: url('../src/images/fallow2.png');
+  background-size: contain;
+}
+#tbdA {
+  height: 100px;
+  background-image: url('../src/images/fallow3.png');
+  background-size: contain;
+}
+
+#tbdB {
+  height: 100px;
+  background-image: url('../src/images/fallow4.png');
+  background-size: contain;
+}
+
+#tbdC {
+  height: 100px;
+  background-image: url('../src/images/fallow5.png');
+  background-size: contain;
+}
+
+#tbdD {
+  height: 100px;
+  background-image: url('../src/images/fallow1.png');
+  background-size: contain;
+}
+#tbdE {
+  height: 100px;
+  background-image: url('../src/images/fallow4.png');
+  background-size: contain;
+}
+#gallery {
+  height: 100px;
+  background-image: url('../src/images/fallow4.png');
+  background-size: contain;
+} */

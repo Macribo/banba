@@ -109,7 +109,7 @@ export default class Fóladh extends Component {
   state = {
     projectDescription:
       'Mouseover a project to see details. Click to view demo/source',
-    projectTitle: 'Welcome!'
+    projectTitle: 'Fáilte'
   };
   titles = [
     'Banba',
@@ -149,13 +149,14 @@ export default class Fóladh extends Component {
             display: 'flex',
             justifyContent: 'center',
             alignContent: 'center'
+            // border: '2px solid blue'
           }}
         >
           <Jumbotron
             align="center"
             style={{
               width: '80%',
-              marginBottom: '100px',
+              marginBottom: '10px',
               // height: '50%',
               opacity: '0.8',
               borderRadius: '10px'
@@ -178,55 +179,49 @@ export default class Fóladh extends Component {
         <Row
         // style={{ border: '3px solid orange' }}
         >
-          <Col>
-            <div className="projectMenu" style={{ marginTop: '0' }}>
+          <Col
+            style={{
+              display: 'flex',
+              marginTop: '0',
+              marginBottom: '100px',
+              justifyContent: 'center',
+              alignItems: 'center'
+            }}
+          >
+            <div className="projectMenu">
               <div className="row" id="projectRow">
                 {/* cleite */}
                 <div
-                  style={{ textDecoration: 'none' }}
-                  className="L col-3  text-center projectBtnContainer"
+                  style={{
+                    textDecoration: 'none'
+                  }}
+                  className="L col-3  text-center "
                   id="banba"
                   onMouseOver={this.handleOnMouseOver}
                   onMouseLeave={this.handleOnMouseLeave}
                   onClick={this.handleMouseClick}
-                >
-                  <i
-                    className="fas fa-feather-alt fa-4x"
-                    style={{ color: 'purple' }}
-                  />{' '}
-                </div>
+                />
 
                 {/* fuburo */}
                 <Link
                   style={{ textDecoration: 'none' }}
-                  className="L col-3  text-center projectBtnContainer"
+                  className="L col-3  text-center"
                   to="/Fuburo"
                   id="fuburo"
                   onMouseOver={this.handleOnMouseOver}
                   onMouseLeave={this.handleOnMouseLeave}
                   onClick={this.handleMouseClick}
-                >
-                  <i
-                    className="fas fa-map-marker-alt fa-4x"
-                    style={{ color: '#04E400' }}
-                  />{' '}
-                </Link>
+                />
 
                 {/*  */}
                 <Link
                   style={{ textDecoration: 'none' }}
-                  className="L col-3 text-center projectBtnContainer"
+                  className="L col-3 text-center"
                   to="/A"
                   id="tbdA"
                   onMouseOver={this.handleOnMouseOver}
                   onMouseLeave={this.handleOnMouseLeave}
-                >
-                  {' '}
-                  <i
-                    className="fas fa-keyboard fa-4x"
-                    style={{ color: '#34495E' }}
-                  />{' '}
-                </Link>
+                />
               </div>
               {/*close first row */}
 
@@ -234,47 +229,33 @@ export default class Fóladh extends Component {
                 {/*  */}
                 <Link
                   style={{ textDecoration: 'none' }}
-                  className="L col-3 text-center projectBtnContainer"
+                  className="L col-3 text-center "
                   to="/B"
                   id="tbdB"
                   onMouseOver={this.handleOnMouseOver}
                   onMouseLeave={this.handleOnMouseLeave}
-                >
-                  {' '}
-                  <i
-                    className="fas fa-journal-whills fa-4x
-                "
-                  />{' '}
-                </Link>
+                />
                 {/*  */}
 
                 <Link
-                  className="L col-3 text-center projectBtnContainer"
+                  className="L col-3 text-center"
                   to="/C"
                   id="tbdC"
                   onMouseOver={this.handleOnMouseOver}
                   onMouseLeave={this.handleOnMouseLeave}
                 >
                   {' '}
-                  <i
-                    className="fas fa-times fa-4x"
-                    style={{ color: '#BE44EE' }}
-                  />{' '}
                 </Link>
                 {/*  */}
                 <Link
                   style={{ textDecoration: 'none' }}
-                  className="L col-3  text-center projectBtnContainer"
+                  className="L col-3  text-center "
                   to="/D"
                   id="tbdD"
                   onMouseOver={this.handleOnMouseOver}
                   onMouseLeave={this.handleOnMouseLeave}
                 >
                   {' '}
-                  <i
-                    className="fas fa-times fa-4x"
-                    style={{ color: '#BE44EE' }}
-                  />{' '}
                 </Link>
               </div>
               {/* ^end of second row */}
@@ -283,48 +264,33 @@ export default class Fóladh extends Component {
                 {/* gallery */}
                 <Link
                   style={{ textDecoration: 'none' }}
-                  className="L col-3 text-center projectBtnContainer"
+                  className="L col-3 text-center r"
                   to="/Gallery"
                   id="gallery"
                   onMouseOver={this.handleOnMouseOver}
                   onMouseLeave={this.handleOnMouseLeave}
-                >
-                  <i
-                    className="fas fa-palette fa-4x"
-                    style={{ color: 'brown' }}
-                  />{' '}
-                </Link>
+                />
 
                 {/*  likeUs*/}
                 <Link
                   style={{ textDecoration: 'none' }}
-                  className="L col-3  text-center projectBtnContainer"
+                  className="L col-3  text-center"
                   to="/Likeus"
                   id="likeUs"
                   onMouseOver={this.handleOnMouseOver}
                   onMouseLeave={this.handleOnMouseLeave}
                 >
                   {' '}
-                  <i
-                    className="fas fa-paw fa-4x"
-                    style={{ color: 'rgba(245, 132, 226, 0.8)' }}
-                  />{' '}
                 </Link>
                 {/*  */}
                 <Link
                   style={{ textDecoration: 'none' }}
-                  className="L col-3 text-center projectBtnContainer"
+                  className="L col-3 text-center "
                   to="E"
                   id="tbdE"
                   onMouseOver={this.handleOnMouseOver}
                   onMouseLeave={this.handleOnMouseLeave}
-                >
-                  {' '}
-                  <i
-                    className="fas fa-times fa-4x"
-                    style={{ color: '#BE44EE' }}
-                  />{' '}
-                </Link>
+                />
               </div>
             </div>{' '}
             <p className="lead">

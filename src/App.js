@@ -23,7 +23,7 @@ class App extends Component {
         <div>
           <Sitenav />
           <Switch>
-            {/* <Route exact path="/" component={Projects} />
+            <Route exact path="/" component={Projects} />
             <Route exact path="/likeus" component={Likeus} />
             <Route exact path="/fuburo" component={Fuburo} />
             <Route exact path="/gallery" component={Gallery} />
@@ -31,7 +31,7 @@ class App extends Component {
             <Route exact path="/b" component={B} />
             <Route exact path="/c" component={C} />
             <Route exact path="/d" component={D} />
-            <Route exact path="/e" component={E} /> */}
+            <Route exact path="/e" component={E} />
 
             <Route component={Fóladh} />
           </Switch>

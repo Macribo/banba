@@ -106,11 +106,12 @@ export default class Banba extends Component {
         break;
     }
   };
-
+  //vvvvvvvvvvv\STATE\/vvvvvvvvvvv\STATE\/vvvvvvvvvvv\STATE\
   state = {
     projectDescription:
       'Mouseover a project to see details. Click to view demo/source',
     projectTitle: 'Welcome!'
+    //^^^^^^^^\STATE\//^^^^^^^^\STATE\//^^^^^^^^\STATE\
   };
   titles = [
     'Banba',
@@ -152,9 +153,7 @@ export default class Banba extends Component {
           <h1 className="display-3">
             {<ProjectTitle projectTitle={this.state.projectTitle} />}
           </h1>
-          <p className="lead">
-            <Preview projectDescription={this.state.projectDescription} />
-          </p>
+          <Preview projectDescription={this.state.projectDescription} />
           <hr className="my-2" />
           <p>
             {/* It uses utility classes for typography and spacing to space content
@@ -223,7 +222,7 @@ export default class Banba extends Component {
               >
                 {' '}
                 <i
-                  class="fas fa-journal-whills fa-4x
+                  className="fas fa-journal-whills fa-4x
                 "
                 />{' '}
               </Link>

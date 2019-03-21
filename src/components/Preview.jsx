@@ -12,7 +12,7 @@ export default class Preview extends React.Component {
         }}
       >
         <div className="row" id="preview" style={{ padding: '10px' }}>
-          <p> {this.props.projectDescription}</p>
+          {this.props.projectDescription}
         </div>
       </div>
     );
