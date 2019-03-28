@@ -99,7 +99,7 @@ h3 {
 }
 
 .projectMenu {
-  /* margin-top: 5%; */
+  padding-top: 5%;
   /* background-size: 100% 100%; */
 
   /* background-image: url('../src/images/bg2.png'); */
@@ -367,17 +367,18 @@ h3 {
 #outerDiv > div {
   position: absolute;
 }
-.poster-to-show {
-  background-image: url('../src/images/tinyHans.png');
+.poster-container {
   /* 
   height: 100%;
   width: 100%;
   background-size: cover; */
-  border: 3px solid green;
+  /* border: 3px solid green; */
   background-repeat: no-repeat;
   /* justify-content: space-around */
 }
 
+#poster-to-show {
+}
 #stack-row-elements {
   /* border: 3px solid green; */
   display: flex;
