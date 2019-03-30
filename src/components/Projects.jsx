@@ -34,21 +34,24 @@ export default class Banba extends Component {
       case 'fuburo':
         this.setState({
           projectDescription: this.descriptions[1],
-          projectTitle: this.titles[1]
+          projectTitle: this.titles[1],
+          poster: this.posters[1]
         });
         break;
 
       case 'tbdA':
         this.setState({
           projectDescription: this.descriptions[2],
-          projectTitle: this.titles[2]
+          projectTitle: this.titles[2],
+          poster: this.posters[2]
         });
         break;
 
       case 'tbdB':
         this.setState({
           projectDescription: this.descriptions[3],
-          projectTitle: this.titles[3]
+          projectTitle: this.titles[3],
+          poster: this.posters[3]
         });
         break;
 
@@ -138,14 +141,19 @@ export default class Banba extends Component {
     `"Banba" is a collection of projects related to the development of assistive software for Irish language learners.`,
     `Fuburo: The online lost and found office. www.fuburo.de`,
     `Learn To Type with Tiny Hans!`,
-    `Line of the day: Because busy people blog.`,
+    `Come and see my Github sketchbooks!`,
     `Fallow field`,
     `Fallow field`,
     `Fallow field`,
     `The breakfast App`,
     `Fallow field`
   ];
-  posters = ['https://i.imgur.com/vgIIrtS.png'];
+  posters = [
+    'https://i.imgur.com/lpOzGQX.png',
+    'https://imgur.com/0Fys30V.png',
+    'https://imgur.com/biWJ4Jh.png',
+    'https://imgur.com/teXkfYW.png'
+  ];
 
   render() {
     return (
@@ -164,10 +172,13 @@ export default class Banba extends Component {
             </h1>
             <Preview projectDescription={this.state.projectDescription} />
           </Col>
-          <Col sm="12" md={{ size: 10, offset: 1 }}>
-            {/* <div id="outerDiv"> */}
-            <ProjectPosters poster={this.state.poster} />
-            {/* </div> */}
+          <Col sm="12" md={{ size: 8, offset: 2 }} className="center-block">
+            <div style={{ textAlign: 'center' }}>
+              <ProjectPosters
+                className="img-responsive"
+                poster={this.state.poster}
+              />
+            </div>
             <div
               className="projectMenu"
               align="center"
@@ -233,40 +244,13 @@ export default class Banba extends Component {
                 >
                   {' '}
                   <i
-                    className="fas fa-journal-whills fa-4x
+                    className="fab fa-github-alt fa-4x
                 "
                   />{' '}
                 </Link>
                 {/*  */}
 
-                <Link
-                  className="L col-1 text-center projectBtnContainer"
-                  to="/C"
-                  id="tbdC"
-                  onMouseOver={this.handleOnMouseOver}
-                  onMouseLeave={this.handleOnMouseLeave}
-                >
-                  {' '}
-                  <i
-                    className="fas fa-crow fa-4x"
-                    style={{ color: 'rgb(78, 73, 83)' }}
-                  />{' '}
-                </Link>
                 {/*  */}
-                <Link
-                  style={{ textDecoration: 'none' }}
-                  className="L col-1  text-center projectBtnContainer"
-                  to="/D"
-                  id="tbdD"
-                  onMouseOver={this.handleOnMouseOver}
-                  onMouseLeave={this.handleOnMouseLeave}
-                >
-                  {' '}
-                  <i
-                    className="fas fa-crow fa-4x"
-                    style={{ color: 'rgb(78, 73, 83)' }}
-                  />{' '}
-                </Link>
 
                 {/* gallery */}
                 <Link
@@ -299,7 +283,7 @@ export default class Banba extends Component {
                   />{' '}
                 </Link>
                 {/*  */}
-                <Link
+                {/* <Link
                   style={{ textDecoration: 'none' }}
                   className="L col-1 text-center projectBtnContainer"
                   to="E"
@@ -312,7 +296,7 @@ export default class Banba extends Component {
                     className="fas fa-crow fa-4x"
                     style={{ color: 'rgb(78, 73, 83)' }}
                   />{' '}
-                </Link>
+                </Link> */}
               </div>
             </div>{' '}
             <p className="lead">

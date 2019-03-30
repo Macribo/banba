@@ -7,10 +7,11 @@ export default class ProjectPosters extends Component {
         <div
           className="poster-container"
           style={{
-            //   border: '10px solid blue',
-            //   height: '500px',
-            //   width: '500px'
+            // border: '10px solid blue',
+            // height: '500px',
+            // width: '500px',
             height: '340px',
+
             backgroundImage: 'url(' + this.props.poster + ')',
             backgroundSize: 'contain'
           }}
