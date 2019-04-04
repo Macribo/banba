@@ -33,7 +33,7 @@ class App extends Component {
             <Route exact path="/d" component={D} />
             <Route exact path="/e" component={E} />
 
-            <Route component={Fóladh} />
+            {/* <Route component={Fóladh} /> */}
           </Switch>
         </div>
       </Router>
