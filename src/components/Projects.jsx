@@ -142,17 +142,26 @@ export default class Banba extends Component {
     `Fuburo: The online lost and found office. www.fuburo.de`,
     `Learn To Type with Tiny Hans!`,
     `Come and see my Github sketchbooks!`,
-    `Fallow field`,
-    `Fallow field`,
+    `Gallery of my artwork (coming soon!)`,
+    `The breakfast App`,
     `Fallow field`,
     `The breakfast App`,
     `Fallow field`
   ];
   posters = [
+    // '../../images/a.png',
+    //banba
     'https://i.imgur.com/lpOzGQX.png',
+    //fuburo
     'https://imgur.com/0Fys30V.png',
+    //tinyhans
     'https://imgur.com/biWJ4Jh.png',
-    'https://imgur.com/teXkfYW.png'
+    //github
+    'https://i.imgur.com/44ihjDc.png',
+    //gallery
+    'https://i.imgur.com/9TQ1cxn.png',
+    //likeus
+    'https://i.imgur.com/OS0mx0V.png'
   ];
 
   render() {
