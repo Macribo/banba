@@ -39,7 +39,7 @@ export default class Banba extends Component {
         });
         break;
 
-      case 'tbdA':
+      case 'tinyH':
         this.setState({
           projectDescription: this.descriptions[2],
           projectTitle: this.titles[2],
@@ -47,7 +47,7 @@ export default class Banba extends Component {
         });
         break;
 
-      case 'tbdB':
+      case 'macR':
         this.setState({
           projectDescription: this.descriptions[3],
           projectTitle: this.titles[3],
@@ -55,47 +55,28 @@ export default class Banba extends Component {
         });
         break;
 
-      case 'tbdC':
+      case 'gallery':
         this.setState({
           projectDescription: this.descriptions[4],
-          projectTitle: this.titles[4]
+          projectTitle: this.titles[4],
+          poster: this.posters[4]
         });
         break;
 
       //rmucv etc
 
-      case 'tbdD':
-        this.setState({
-          projectDescription: this.descriptions[5],
-          projectTitle: this.titles[5]
-        });
-        break;
-
-      case 'gallery':
-        this.setState({
-          projectDescription: this.descriptions[6],
-          projectTitle: this.titles[6]
-        });
-        break;
       case 'likeUs':
         this.setState({
-          projectDescription: this.descriptions[7],
-          projectTitle: this.titles[7]
-        });
-        break;
-
-      //linkbox-ads
-      case 'tbdE':
-        this.setState({
-          projectDescription: this.descriptions[8],
-          projectTitle: this.titles[8]
+          projectDescription: this.descriptions[5],
+          projectTitle: this.titles[5],
+          poster: this.posters[5]
         });
         break;
 
       default:
         this.setState({
-          projectDescription: 'Fallow Fields',
-          projectTitles: 'Placeholder'
+          projectDescription: 'Click project to select',
+          projectTitles: 'Hover for description'
         });
         break;
     }
@@ -131,11 +112,8 @@ export default class Banba extends Component {
     'Fuburo',
     'Tiny Hans',
     'Web Development',
-    'placeholder',
-    'placeholder',
     'Gallery',
-    'likeUs',
-    'placeholder'
+    'LikeUs'
   ];
   descriptions = [
     `"Banba" is a collection of projects related to the development of assistive software for Irish language learners.`,
@@ -143,10 +121,7 @@ export default class Banba extends Component {
     `Learn To Type with Tiny Hans!`,
     `Come and see my Github sketchbooks!`,
     `Gallery of my artwork (coming soon!)`,
-    `The breakfast App`,
-    `Fallow field`,
-    `The breakfast App`,
-    `Fallow field`
+    `The breakfast App`
   ];
   posters = [
     // '../../images/a.png',
@@ -231,7 +206,7 @@ export default class Banba extends Component {
                   style={{ textDecoration: 'none' }}
                   className="L col-1 text-center projectBtnContainer"
                   to="/A"
-                  id="tbdA"
+                  id="tinyH"
                   onMouseOver={this.handleOnMouseOver}
                   onMouseLeave={this.handleOnMouseLeave}
                 >
@@ -247,7 +222,7 @@ export default class Banba extends Component {
                   style={{ textDecoration: 'none' }}
                   className="L col-1 text-center projectBtnContainer"
                   to="/B"
-                  id="tbdB"
+                  id="macR"
                   onMouseOver={this.handleOnMouseOver}
                   onMouseLeave={this.handleOnMouseLeave}
                 >
