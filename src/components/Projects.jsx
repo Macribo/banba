@@ -16,7 +16,7 @@ export default class Banba extends Component {
   state = {
     projectDescription:
       'Mouseover a project to see details. Click to view demo/source',
-    projectTitle: 'Welcome!',
+    projectTitle: 'Project Viewer',
     poster: ''
   };
   //^^^^^^^^\STATE\//^^^^^^^^\STATE\//^^^^^^^^\STATE\
@@ -101,6 +101,18 @@ export default class Banba extends Component {
       case 'fuburo':
         window.open('https://fuburo.de');
         break;
+
+      case 'tinyH':
+        window.open('https://github.com/Macribo/a_is_for');
+        break;
+      case 'macR':
+        window.open('https://github.com/Macribo');
+        break;
+      case 'gallery':
+        break;
+      case 'likeUs':
+        window.open('https://macribo.github.io/likeUs/');
+        break;
       default:
         break;
     }
@@ -169,7 +181,7 @@ export default class Banba extends Component {
               style={{ marginTop: '0' }}
             >
               <div className="row" id="projectRow" align="center">
-                {/* cleite */}
+                {/* banba */}
 
                 <div
                   style={{ textDecoration: 'none' }}
@@ -186,7 +198,7 @@ export default class Banba extends Component {
                 </div>
 
                 {/* fuburo */}
-                <Link
+                <div
                   style={{ textDecoration: 'none' }}
                   className="L col-1  text-center projectBtnContainer"
                   to="/Fuburo"
@@ -199,10 +211,10 @@ export default class Banba extends Component {
                     className="fas fa-map-marker-alt fa-4x"
                     style={{ color: '#04E400' }}
                   />{' '}
-                </Link>
+                </div>
 
                 {/*  */}
-                <Link
+                <div
                   style={{ textDecoration: 'none' }}
                   className="L col-1 text-center projectBtnContainer"
                   to="/A"
@@ -215,10 +227,10 @@ export default class Banba extends Component {
                     className="fas fa-keyboard fa-4x"
                     style={{ color: '#34495E' }}
                   />{' '}
-                </Link>
+                </div>
 
                 {/*  */}
-                <Link
+                <div
                   style={{ textDecoration: 'none' }}
                   className="L col-1 text-center projectBtnContainer"
                   to="/B"
@@ -231,13 +243,13 @@ export default class Banba extends Component {
                     className="fab fa-github-alt fa-4x
                 "
                   />{' '}
-                </Link>
+                </div>
                 {/*  */}
 
                 {/*  */}
 
                 {/* gallery */}
-                <Link
+                <div
                   style={{ textDecoration: 'none' }}
                   className="L col-1 text-center projectBtnContainer"
                   to="/Gallery"
@@ -249,25 +261,25 @@ export default class Banba extends Component {
                     className="fas fa-palette fa-4x"
                     style={{ color: 'brown' }}
                   />{' '}
-                </Link>
+                </div>
 
                 {/*  likeUs*/}
-                <Link
+                <div
                   style={{ textDecoration: 'none' }}
                   className="L col-1  text-center projectBtnContainer"
-                  to="/Likeus"
                   id="likeUs"
                   onMouseOver={this.handleOnMouseOver}
                   onMouseLeave={this.handleOnMouseLeave}
+                  onClick={this.handleMouseClick}
                 >
                   {' '}
                   <i
                     className="fas fa-paw fa-4x"
                     style={{ color: 'rgba(245, 132, 226, 0.8)' }}
                   />{' '}
-                </Link>
+                </div>
                 {/*  */}
-                {/* <Link
+                {/* <div
                   style={{ textDecoration: 'none' }}
                   className="L col-1 text-center projectBtnContainer"
                   to="E"
@@ -280,7 +292,7 @@ export default class Banba extends Component {
                     className="fas fa-crow fa-4x"
                     style={{ color: 'rgb(78, 73, 83)' }}
                   />{' '}
-                </Link> */}
+                </div> */}
               </div>
             </div>{' '}
             <p className="lead">

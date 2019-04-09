@@ -1,3 +1,7 @@
+.navbar {
+  margin: 0;
+}
+
 .App {
   text-align: center;
 }
@@ -44,7 +48,7 @@ body {
   margin: 0;
   background-size: 100% 100%;
 
-  background-image: url('../src/images/mainBG.png');
+  background-image: url('../src/images/b.jpg');
   background-size: cover;
   overflow: hidden;
   background-repeat: no-repeat;
@@ -99,7 +103,7 @@ h3 {
 }
 
 .projectMenu {
-  padding-top: 5%;
+  padding-top: 1%;
   /* background-size: 100% 100%; */
 
   /* background-image: url('../src/images/bg2.png'); */

@@ -21,7 +21,7 @@ class App extends Component {
     return (
       <Router>
         <div>
-          {/* <Sitenav /> */}
+          <Sitenav />
           <Switch>
             <Route exact path="/" component={Projects} />
             <Route exact path="/likeus" component={Likeus} />
