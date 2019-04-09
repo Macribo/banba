@@ -150,7 +150,7 @@ export default class Banba extends Component {
         }}
       >
         <Row id="stack-row-elements">
-          <Col sm="12" md={{ size: 10, offset: 1 }}>
+          <Col sm="12" md={{ size: 12, offset: 0 }}>
             <h1 className="display-3" style={{ paddingTop: '30px' }}>
               {<ProjectTitle projectTitle={this.state.projectTitle} />}
             </h1>
