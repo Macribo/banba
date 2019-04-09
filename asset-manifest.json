@@ -1,17 +1,17 @@
 {
-  "main.css": "/banba/static/css/main.f81fdbd1.chunk.css",
-  "main.js": "/banba/static/js/main.9328edc8.chunk.js",
-  "main.js.map": "/banba/static/js/main.9328edc8.chunk.js.map",
+  "main.css": "/banba/static/css/main.a501de9f.chunk.css",
+  "main.js": "/banba/static/js/main.5bf6600c.chunk.js",
+  "main.js.map": "/banba/static/js/main.5bf6600c.chunk.js.map",
   "runtime~main.js": "/banba/static/js/runtime~main.8e50482f.js",
   "runtime~main.js.map": "/banba/static/js/runtime~main.8e50482f.js.map",
   "static/css/2.6b1ddee5.chunk.css": "/banba/static/css/2.6b1ddee5.chunk.css",
   "static/js/2.9005b7e7.chunk.js": "/banba/static/js/2.9005b7e7.chunk.js",
   "static/js/2.9005b7e7.chunk.js.map": "/banba/static/js/2.9005b7e7.chunk.js.map",
   "index.html": "/banba/index.html",
-  "precache-manifest.7c6f2d04a43d11487bbad275d5866ac3.js": "/banba/precache-manifest.7c6f2d04a43d11487bbad275d5866ac3.js",
+  "precache-manifest.c0e5b400309b4f2c565d58cf31192295.js": "/banba/precache-manifest.c0e5b400309b4f2c565d58cf31192295.js",
   "service-worker.js": "/banba/service-worker.js",
   "static/css/2.6b1ddee5.chunk.css.map": "/banba/static/css/2.6b1ddee5.chunk.css.map",
-  "static/css/main.f81fdbd1.chunk.css.map": "/banba/static/css/main.f81fdbd1.chunk.css.map",
-  "static/media/logo.svg": "/banba/static/media/logo.5d5d9eef.svg",
-  "static/media/App.css": "/banba/static/media/mainBG.0b4e7c9d.png"
+  "static/css/main.a501de9f.chunk.css.map": "/banba/static/css/main.a501de9f.chunk.css.map",
+  "static/media/App.css": "/banba/static/media/b.96df71ba.jpg",
+  "static/media/logo.svg": "/banba/static/media/logo.5d5d9eef.svg"
 }
