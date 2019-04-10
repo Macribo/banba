@@ -89,7 +89,8 @@ export default class Banba extends Component {
       projectDescription:
         'Mouseover a project for details. Click a project to view source or demo',
 
-      projectTitle: 'Welcome'
+      projectTitle: 'Welcome',
+      poster: ''
     });
   };
 
@@ -221,6 +222,7 @@ export default class Banba extends Component {
                   id="tinyH"
                   onMouseOver={this.handleOnMouseOver}
                   onMouseLeave={this.handleOnMouseLeave}
+                  onClick={this.handleMouseClick}
                 >
                   {' '}
                   <i
@@ -237,6 +239,7 @@ export default class Banba extends Component {
                   id="macR"
                   onMouseOver={this.handleOnMouseOver}
                   onMouseLeave={this.handleOnMouseLeave}
+                  onClick={this.handleMouseClick}
                 >
                   {' '}
                   <i

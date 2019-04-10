@@ -11,9 +11,11 @@ export default class ProjectPosters extends Component {
             // height: '500px',
             // width: '500px',
             height: '340px',
-
+            display: 'flex',
+            alignContent: 'center',
+            justifyContent: 'center',
             backgroundImage: 'url(' + this.props.poster + ')',
-            backgroundSize: 'contain'
+            backgroundSize: 'cover'
           }}
         />
         {/* <img id="poster-to-show" src={this.props.currentPosterToDisplay} /> */}
